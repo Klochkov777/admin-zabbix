@@ -47,9 +47,9 @@
 
 ### Задание 2
 
-1. [link screen authorization]()
-2. [link screen hosts connected]()
-3. [link screen log]()
+1. [link screen authorization](https://github.com/Klochkov777/admin-zabbix/blob/master/screen/task2.1.png)
+2. [link screen hosts connected](https://github.com/Klochkov777/admin-zabbix/blob/master/screen/task2.2.png)
+3. [link screen log](https://github.com/Klochkov777/admin-zabbix/blob/master/screen/task2.3.png)
 4. Для выполнения задания не пользовался bash. Был использован графический интерфейс zabbix. Поэтому команд не предоставляю.
 
 >>>>>>> bae5bb3 (finished task1.2)
