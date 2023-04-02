@@ -29,19 +29,27 @@
 
 `Приведите ответ в свободной форме........`
 
-1. [link screen authorization]()
+1. [link screen authorization](https://github.com/Klochkov777/admin-zabbix/blob/master/screen/task1.1.png)
 2. Вместо Apache был установлен nginx и вместо zabbix-agent был установлен zabbix-agent2. Использовалась версия linux Debian11, zabbix 6.4, postgresql-13. Все это было сделано по рекомендации лектора и на выполнение задания существенного влияния не оказало. Были применены для установки следующие команды:
-sudo wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian11_all.deb
-sudo dpkg -i zabbix-release_6.4-1+debian11_all.deb
-sudo apt update
-sudo apt install zabbix-server-pgsql zabbix-frontend-php php7.4-pgsql zabbix-apache-conf zabbix-sql-scripts zabbix-agent2
-sudo apt install postgresql-13
-sudo -u postgres createuser --pwprompt zabbix
-sudo -u postgres createdb -O zabbix zabbix
-zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
-Отредактировал файл /etc/zabbix/zabbix_server.conf:  DBPassword=password
-Отредактировал файл /etc/zabbix/nginx.conf -- раскоментировал: # listen 8080;  # server_name example.com;
-systemctl restart zabbix-server zabbix-agent nginx php7.4-fpm
-systemctl enable zabbix-server zabbix-agent nginx php7.4-fpm
+* sudo wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian11_all.deb
+* sudo dpkg -i zabbix-release_6.4-1+debian11_all.deb
+* sudo apt update
+* sudo apt install zabbix-server-pgsql zabbix-frontend-php php7.4-pgsql zabbix-apache-conf zabbix-sql-scripts zabbix-agent2
+* sudo apt install postgresql-13
+* sudo -u postgres createuser --pwprompt zabbix
+* sudo -u postgres createdb -O zabbix zabbix
+* zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+* Отредактировал файл /etc/zabbix/zabbix_server.conf:  DBPassword=password
+* Отредактировал файл /etc/zabbix/nginx.conf -- раскоментировал: # listen 8080;  # server_name example.com;
+* systemctl restart zabbix-server zabbix-agent nginx php7.4-fpm
+* systemctl enable zabbix-server zabbix-agent nginx php7.4-fpm
+
+
+### Задание 2
+
+1. [link screen authorization]()
+2. [link screen hosts connected]()
+3. [link screen log]()
+4. Для выполнения задания не пользовался bash. Был использован графический интерфейс zabbix. Поэтому команд не предоставляю.
 
 >>>>>>> bae5bb3 (finished task1.2)
